@@ -257,3 +257,9 @@ Ten en cuenta que en esta instancia no es obligatorio el desarrollo de testing p
 <br />
 
 <img src="./pokemon.png" alt="" />
+
+	"scripts": {
+		"start": "node index.js",
+		"server": "nodemon  -L",
+		"test": "mocha -w ./tests/**/*.spec.js"
+	},

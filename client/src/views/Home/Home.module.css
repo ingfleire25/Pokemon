@@ -1,0 +1,32 @@
+.contenedorHome {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.iconFilter {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1rem 0;
+  cursor: pointer;
+  width: 7rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  stroke: #555;
+}
+
+.filtro {
+  color: rgb(255, 255, 255);
+  font-family: "Carter One", cursive;
+}
+.filtro:hover {
+  text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}

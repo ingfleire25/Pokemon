@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.containerFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  position: fixed;
+  top: 20vh;
+  left: -50rem;
+  width: 12rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 0 1rem 1rem 0;
+  height: 60vh;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+.containerFilterActive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  width: 12rem;
+  background: rgba(64, 144, 156, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 0 1rem 1rem 0;
+  height: 60vh;
+  padding: 1rem;
+  transition: all 0.3s linear;
+  z-index: 2;
+}
+
+.segmento {
+  color: rgb(255, 255, 255);
+  font-family: "Carter One", cursive;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 5px #4e31aa;
+}
+
+.filterByType {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.selectorType {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.reset {
+  align-self: center;
+  color: white;
+  background-color: black;
+  width: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.reset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  border-radius: 0.4rem;
+  filter: blur(0.4rem);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

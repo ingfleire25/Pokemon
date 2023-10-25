@@ -1,0 +1,8 @@
+.container {
+  background-image: url("../Imgs/descarga.jpeg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 50%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}

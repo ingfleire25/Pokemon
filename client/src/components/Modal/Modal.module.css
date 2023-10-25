@@ -1,0 +1,94 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: center;
+  left: -200%;
+  width: 18rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  border-radius: 1rem;
+  height: 20vh;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+.containerFormActive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18rem;
+  background: rgba(64, 144, 156, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(91, 110, 137, 0.3);
+  border-radius: 1rem;
+  height: 20vh;
+  padding: 1rem;
+  transition: all 0.3s linear;
+  z-index: 2;
+}
+
+.titulo {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.aceptar {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  position: relative;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.aceptar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  border-radius: 0.4rem;
+  filter: blur(0.4rem);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

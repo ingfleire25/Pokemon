@@ -1,0 +1,40 @@
+.contenedor404 {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  /* align-items: flex-start; */
+  background-image: url("../../Imgs/error4042.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100% 50%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  padding-left: 3rem;
+}
+
+.aviso,
+.error {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.aviso {
+  color: white;
+}
+
+.error {
+  color: #4e31aa;
+}
+
+.regresar {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px #4e31aa;
+  font-family: "Ubuntu", cursive;
+  font-weight: 800;
+  margin-top: 3rem;
+  text-align: center;
+}
